@@ -4,10 +4,10 @@
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
     
     
-    <title>Hello | Rhapsody | 不积跬步，无以至千里</title>
+    <title>tags | Rhapsody | 不积跬步，无以至千里</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="keywords" content="Welcome,Testing">
+    <meta name="keywords" content="">
     <link rel="shortcut icon" href="/img/earth.ico">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="/css/style.css?v=1.3.2">
@@ -15,16 +15,18 @@
     <script type="text/javascript">
         // Data Center
         var DC = {
-            reward:	true,
+            reward:	false,
             lv: JSON.parse('{"enable":true,"app_id":"NKjKG1V8rXwbFEGNgOaAsT69-gzGzoHsz","app_key":"AxuIJ3XB4NNfoTdmyUviWVGw","icon":true}'),
-            v: JSON.parse('{"enable":true,"appid":"NKjKG1V8rXwbFEGNgOaAsT69-gzGzoHsz","appkey":"AxuIJ3XB4NNfoTdmyUviWVGw","notify":false,"verify":true,"placeholder":"请留下您的建议或疑问...","avatar":"identicon"}'),
+            v: JSON.parse('{"enable":true,"appid":"NKjKG1V8rXwbFEGNgOaAsT69-gzGzoHsz","appkey":"AxuIJ3XB4NNfoTdmyUviWVGw","notify":false,"verify":true,"placeholder":"请留下建议或疑问......PS.可填写邮箱便于通知回复","avatar":"identicon"}'),
             g: JSON.parse('{"enable":false,"lazy":true,"owner":"544032960@qq.com","repo":"comments","oauth":{"client_id":"9dd91e59897ce58abc65","client_secret":"45f2d5d4532c1be548a245a6eb1c448b1e145115"},"perPage":5}'),
-            d: JSON.parse('{"app_id":null}')
+            d: JSON.parse('{"app_id":"bae606f1"}')
         };
     </script>
     <script type="text/javascript">
         window.lazyScripts=[];
-    </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    </script>
+    
+        <script type="text/javascript" src="/js/plugins/daovoice.js?v=1.3.2"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
     
 </head>
 
@@ -32,7 +34,7 @@
 <body>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="loading" class="active"></div>
 
-    <aside id="menu" class="hide" >
+    <aside id="menu"  >
   <div class="inner flex-row-vertical">
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
@@ -110,14 +112,14 @@
               </a>
             </li>
         
-            <li class=" active">
+            <li class="">
               <a href="/categories"  >
                 <i class="icon icon-lg icon-th-list"></i>
-                目录
+                分类
               </a>
             </li>
         
-            <li class="">
+            <li class=" active">
               <a href="/tags"  >
                 <i class="icon icon-lg icon-tags"></i>
                 标签
@@ -128,6 +130,13 @@
               <a href="/archives"  >
                 <i class="icon icon-lg icon-archives"></i>
                 归档
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/timeaixs"  >
+                <i class="icon icon-lg icon-clock-o"></i>
+                时间轴
               </a>
             </li>
         
@@ -143,7 +152,7 @@
           <i class="icon icon-lg icon-navicon"></i>
         </a>
         <div class="flex-col header-title ellipsis">
-            <span>Hello</span>
+            <span>标签</span>
             
         </div>
         
@@ -153,24 +162,37 @@
         
     </div>
 </header>
-<header class="content-header post-header">
+<header class="content-header tags-header">
     <img src="/img/wave2.jpg" class="header-bg">
     <div class="container fade-scale">
-        <h1 class="title">Hello</h1>
+        <h1 class="title">标签</h1>
         <h5 class="subtitle">
-            
-                <time datetime="2018-10-12T16:00:00.000Z" itemprop="datePublished" class="page-time">
-  2018-10-13
-</time>
-
-
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/categories/">categories</a></li></ul>
-
             
         </h5>
         
     </div>
     
+<div class="tabs-bar container">
+    <nav class="tags-list">
+        <a href="/tags" style="-webkit-order:-1;order:-1" class="tags-list-item waves-effect waves-button waves-light
+             active">All</a>
+        
+            <a href="/tags/Welcome/" backup-style="-webkit-order:0;order:0" class="tags-list-item waves-effect waves-button waves-light">Welcome</a>
+            
+        
+            <a href="/tags/GDAL/" backup-style="-webkit-order:1;order:1" class="tags-list-item waves-effect waves-button waves-light">GDAL</a>
+            
+        
+            <a href="/tags/Python/" backup-style="-webkit-order:2;order:2" class="tags-list-item waves-effect waves-button waves-light">Python</a>
+            
+        
+    </nav>
+    <!-- PC show more-->
+    <div class="tags-list-more">
+        <a href="javascript:;" class="action tags-list-item waves-effect waves-circle waves-light"><i class="icon icon-ellipsis-h"></i></a>
+    </div>
+</div>
+
 
 </header>
 
@@ -187,169 +209,120 @@
     <div id="local-search-result"></div>
 </div>
 
-
-<div class="container body-wrap">
-    <article id="post-hello-world"
-  class="post-article article-type-post" itemprop="blogPost">
-    <div class="post-card">
-        <h1 class="post-card-title">Hello</h1>
-        <div class="post-meta">
-            <time class="post-time" title="2018-10-13 00:00:00" datetime="2018-10-12T16:00:00.000Z"  itemprop="datePublished">2018-10-13</time>
-
-            
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/categories/">categories</a></li></ul>
-
-
-
-            
-	<span id="/categories/hello-world/" class="leancloud_visitors" data-flag-title="Hello" title="Hello">
-		
-			<i class="icon icon-eye"></i>
-		
-		<span class="leancloud-visitors-count"></span>
-	</span>
- 
-
-            
-    <span class="leancloud-comment">
-        <i class="icon icon-comment-o"></i>
-        <a href="/categories/hello-world/#comment">
-            <span class="valine-comment-count" data-xid="/categories/hello-world/"></span>
-        </a>
-    </span>
-
-
-
-            
-        </div>
-        <div class="post-content" id="post-content" itemprop="postContent">
-            
-            <h1 id="Hello-World！"><a href="#Hello-World！" class="headerlink" title="Hello World！"></a>Hello World！</h1><hr>
-<p>Welcome,<br>Here is my blog.<br>$\lambda a+b$</p>
-<script type="math/tex; mode=display">
-a_1</script><a id="more"></a>
-
-        </div>
-        
-<blockquote class="post-copyright">
-    <div class="content">
-        
-<span class="post-time">
-    最后更新时间：<time datetime="2018-10-15T03:04:35.703Z" itemprop="dateUpdated">2018-10-15 11:04:35</time>
-</span><br>
-
-
-        
-        转载注明出处，原文地址：<a href="/categories/hello-world/" target="_blank" rel="external">http://WilliamZcy.github.io/categories/hello-world/</a>
-        
-    </div>
-    <footer>
-        <a href="http://WilliamZcy.github.io">
-            <img src="/img/face.jpg" alt="可乐&Mentos">
-            可乐&Mentos
-        </a>
-    </footer>
-</blockquote>
-
-        
-            <div class="page-reward">
-    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
-</div>
-
-            
-        
-        <div class="post-footer">
-            
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Testing/">Testing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Welcome/">Welcome</a></li></ul>
-
-            <div class="page-share-wrap">
+<div class="container body-wrap fade">
     
+                    <h3 class="archive-separator" id="tag-Welcome">Welcome</h3>
+                    <div class="waterfall">
+                        
+                            <div class="waterfall-item">
+  <article class="article-card archive-article">
+    <div class="post-meta">
+      <time class="post-time" title="2018-10-13 00:00:00" datetime="2018-10-12T16:00:00.000Z"  itemprop="datePublished">2018-10-13</time>
 
-<div class="page-share" id="pageShare">
-    <ul class="reset share-icons">
       
-      <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://WilliamZcy.github.io/categories/hello-world/&title=《Hello》 — Rhapsody&pic=http://WilliamZcy.github.io/img/face.jpg" data-title="微博">
-          <i class="icon icon-weibo"></i>
-        </a>
-      </li>
-      
-      <li>
-        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
-          <i class="icon icon-weixin"></i>
-        </a>
-      </li>
-      
-      <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://WilliamZcy.github.io/categories/hello-world/&title=《Hello》 — Rhapsody&source=Hello World！
-Welcome,Here is my blog.$\lambda a+b$
-
-a_1" data-title=" QQ">
-          <i class="icon icon-qq"></i>
-        </a>
-      </li>
-      
-    </ul>
- </div>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Essay/">Essay</a></li></ul>
 
 
 
-    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
-        <i class="icon icon-share-alt icon-lg"></i>
-    </a>
-</div>
-
-        </div>
-        
-            
-    <div id="comment"></div>
-
-
-
-        
     </div>
     
 
-    
-    
-        <aside class="post-widget">
-            <nav class="post-toc-wrap" id="post-toc">
-                <strong>目录</strong>
-                <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Hello-World！"><span class="post-toc-number">1.</span> <span class="post-toc-text">Hello World！</span></a></li></ol>
-            </nav>
-            <div class="toc-bar"><div>
-        </aside>
-    
-</article>
 
-    <div id="reward" class="page-modal reward-lay">
-    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <h3 class="reward-title">
-        <i class="icon icon-quote-left"></i>
-        我干了，您随意！
-        <i class="icon icon-quote-right"></i>
+  
+    <h3 class="post-title " itemprop="name">
+      <a class="post-title-link" href="/Essay/hello-world/">Hello</a>
     </h3>
-    <div class="reward-content">
-        
-        <div class="reward-code">
-            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
-        </div>
-        
-        <label class="reward-toggle">
-            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
-                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
-            <div class="reward-toggle-ctrol">
-                <span class="reward-toggle-item wechat">微信</span>
-                <span class="reward-toggle-label"></span>
-                <span class="reward-toggle-item alipay">支付宝</span>
-            </div>
-        </label>
-        
-    </div>
-</div>
+  
+
+
 
     
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Welcome/">Welcome</a></li></ul>
 
+    </div>
+    
+  </article>
+</div>
+                        
+                    </div>
+                
+                    <h3 class="archive-separator" id="tag-GDAL">GDAL</h3>
+                    <div class="waterfall">
+                        
+                            <div class="waterfall-item">
+  <article class="article-card archive-article">
+    <div class="post-meta">
+      <time class="post-time" title="2018-07-16 20:09:35" datetime="2018-07-16T12:09:35.000Z"  itemprop="datePublished">2018-07-16</time>
+
+      
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Experiences/">Experiences</a></li></ul>
+
+
+
+    </div>
+    
+
+
+  
+    <h3 class="post-title " itemprop="name">
+      <a class="post-title-link" href="/Experiences/Python-利用GDAL对图像进行几何校正/">Python 利用GDAL对图像进行几何校正</a>
+    </h3>
+  
+
+
+
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GDAL/">GDAL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+
+    </div>
+    
+  </article>
+</div>
+                        
+                    </div>
+                
+                    <h3 class="archive-separator" id="tag-Python">Python</h3>
+                    <div class="waterfall">
+                        
+                            <div class="waterfall-item">
+  <article class="article-card archive-article">
+    <div class="post-meta">
+      <time class="post-time" title="2018-07-16 20:09:35" datetime="2018-07-16T12:09:35.000Z"  itemprop="datePublished">2018-07-16</time>
+
+      
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Experiences/">Experiences</a></li></ul>
+
+
+
+    </div>
+    
+
+
+  
+    <h3 class="post-title " itemprop="name">
+      <a class="post-title-link" href="/Experiences/Python-利用GDAL对图像进行几何校正/">Python 利用GDAL对图像进行几何校正</a>
+    </h3>
+  
+
+
+
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GDAL/">GDAL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+
+    </div>
+    
+  </article>
+</div>
+                        
+                    </div>
+                
+    
 </div>
 
         <footer class="footer">
@@ -412,7 +385,7 @@ a_1" data-title=" QQ">
     <ul class="reset share-icons">
       
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://WilliamZcy.github.io/categories/hello-world/&title=《Hello》 — Rhapsody&pic=http://WilliamZcy.github.io/img/face.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://WilliamZcy.github.io/tags/&title=《tags》 — Rhapsody&pic=http://WilliamZcy.github.io/img/face.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -424,10 +397,7 @@ a_1" data-title=" QQ">
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://WilliamZcy.github.io/categories/hello-world/&title=《Hello》 — Rhapsody&source=Hello World！
-Welcome,Here is my blog.$\lambda a+b$
-
-a_1" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://WilliamZcy.github.io/tags/&title=《tags》 — Rhapsody&source=RemoteSensing" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -439,7 +409,7 @@ a_1" data-title=" QQ">
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACNUlEQVR42u3aS5LiQAxFUe9/064FgM19UlKElTdHBEG1dTzI1u848DlfDv8N+f3VN4uPDBkyHss4b8/9b+7DemWQvyXPfUOVIUPGBoyrG+z+M7k6+WVNnnX5vQwZMmSAdI2keiR9lCFDhoy1DHKZ3pM6z5UhQ8ZuDFLEkkfycvdntbgMGTIeyOBd9////JX5hgwZMh7FOMPz7bDO0pEhQ8ZsRq2VRhJHnlyiAhWUxDJkyNiBQQrLTig8ONLI+1CLy5AhYzSDNPfXDjjJq0SvRoYMGUMZ6UJquoqKUrp0VJnOUWXIkDGIEd/T4XVMXkFxBUSGDBmjGTx0HkS6wNpPEGXIkDGbUUsKUx5f+UqTyMv/N2TIkDGO0b+CyS9JWctL2Tc7IzJkyNiAQVK6tNBNW3W8iEXlqwwZMkYweGHJRwt8RaNWxAbLFjJkyBjB4MteBJY2yzqfUS0uQ4aMEQzeDussYfBEMF2ZlSFDxg6M/poFwfBhwILBgAwZMsYxeEO/nxrW/oUgBhkyZGzA4IOBWug8BUzXyGTIkLEPIx0l8sb92qv2qAUqQ4aMoYzO9/zCPfD50IyTIUPGUMYZHh50LUReuH6YbMiQIWMQo3/Z1Rr96QtKxxUyZMiYx+i0wPhQMy2A4xhkyJCxASMNiKduncFDEJUMGTJktB9JkkV+ERcHAzJkyNiG0Wmo1ZJORJIhQ8YGDFLE1lZdO8sW5KXIkCFjB0ZnxNhJLnnbbtWgVIYMGQ9k/AEnJiy6bdnQywAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABx0lEQVR42u3aSW7DMBAEQP//0wqQqxOlm5uFoHgKvChFHwZkz7xe8bq+V/76+7vXL+u1Y+Hi4k5zr9uVcJN33z+TbOaHJ+Pi4h7kJmUoQSRlq/05cHFxn8xty9k9CBcX939wk22MHYxwcXGfyc0PJS0of87iuxouLu4Etw1Md/y9Md/FxcUtudfESo4syeeL/4iLi3uEm0Qebdt1pmcaPRkXF/cIt215rg1Y74PUKMvBxcVdym2/kA9a5RtOIldcXNyT3DzEzMPQdtv50AYuLu4Zbh5l3l9IktGKfHu4uLif5bbDVW1jNS+CdeyCi4t7kNuWqrwwteHIHypcXNxt3LygjA1OzYxz4eLiforbtjfaw81YVDqV5eDi4i7ijg1d5Y3VZJyiOGDh4uIe4bazT7tvY/kRChcXdzc3b2zkTZf24lT8HLi4uMe5Y+NT883a4oiDi4u7jbs2zmi5dTsWFxf3CHeq8sWlKjnQ4OLiPo3bXnJmilpbyOquLy4u7lJuEpjeb29sPKtunODi4j6eO99QaTePi4v7NG5yQMkPMYOhKi4u7kHuWEjaxqntoefXQoaLi7uZO3Yhace22mh1cb6Li4ubcr8AMDdN1D2CS9QAAAAASUVORK5CYII=" alt="微信分享二维码">
 </div>
 
 
@@ -519,6 +489,13 @@ a_1" data-title=" QQ">
 
 
 
+
+    <script type="text/javascript">
+  daovoice('init', {
+    app_id: "bae606f1"
+  });
+  daovoice('update');
+</script>
 
 
     
