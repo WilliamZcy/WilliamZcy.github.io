@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title>Hello</title>
+      <link href="/categories/hello-world/"/>
+      <url>/categories/hello-world/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Hello-World！"><a href="#Hello-World！" class="headerlink" title="Hello World！"></a>Hello World！</h1><hr><p>Welcome,<br>Here is my blog.<br>$\lambda a+b$</p><script type="math/tex; mode=display">a_1</script><a id="more"></a>]]></content>
+      
+      
+      <categories>
+          
+          <category> categories </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Welcome </tag>
+            
+            <tag> Testing </tag>
+            
+        </tags>
+      
+    </entry>
+    
+  
+  
+</search>
